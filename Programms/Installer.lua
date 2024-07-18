@@ -14,15 +14,15 @@ local function question(Question, Answers)
 end
 
 local function download(repo, url)
-  term.clear()
-  term.setCursorPos(0, 0)
-  term.write("downloading " .. url)
+ -- term.clear()
+ -- term.setCursorPos(0, 0)
+  print("downloading " .. repo.. url)
 
   local downloaded = http.get(repo .. url)
   local data = downloaded.readAll()
 
   if fs.exists(url) then
-    term.write("exist, rewriting")
+    print("exist, rewriting")
     fs.delete(url)
   end
 
@@ -34,7 +34,7 @@ end
 local downloadQuestion = question("Do you want to download turtle programms (Y/N)", { "Y", "N" })
 if downloadQuestion == "Y" then
   print("Downloading files...")
-  local repo = "https://raw.githubusercontent.com/Coromus/MinecraftTurtleProgrramms/main/"
+  local repo = "https://raw.githubusercontent.com/Coromus/MinecraftTurtleProgrramms/main/Programms/"
   local url = "installList.txt"
   download(repo, url)
 
@@ -43,7 +43,7 @@ if downloadQuestion == "Y" then
   file.close()
 
   for line in string.gmatch(content, "([^\r\n]+)") do
-    print(line)
+    download(repo, line)
   end
 
 
