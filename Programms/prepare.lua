@@ -1,4 +1,4 @@
---local fs = fs
+local fs = fs;
 
 local data = {}
 local index = 0
@@ -15,7 +15,7 @@ end
 local function recursive(path)
     local localPath = path
     for _, file in ipairs(fs.list(localPath)) do
-        if file ~= "rom" and file ~= "prepare.lua" and file ~= "installer.lua" then
+        if file ~= "rom" then
             local normalPath = concat(localPath, file)
             if fs.isDir(normalPath) == false then
                 print(normalPath)
