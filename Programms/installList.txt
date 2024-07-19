@@ -6,15 +6,12 @@ Print/Dig/model.ply
 Print/LowMultiFarm/model.ply
 Print/LowMultiFarm/model.png
 Print/LowMultiFarm/model.vox
-Print/Multifarm 4x4/model.ply
-Print/Multifarm 4x4/model.png
-Print/Multifarm 4x4/model.vox
-Print/Samosbor/Samosbor.vox
-Print/Samosbor/model.ply
-Print/Samosbor/model.png
-Print/Village houses/model.ply
-Print/Village houses/model.png
-Print/Village houses/model.vox
+Print/Multifarm4x4/model.ply
+Print/Multifarm4x4/model.png
+Print/Multifarm4x4/model.vox
+Print/Villagehouses/model.ply
+Print/Villagehouses/model.png
+Print/Villagehouses/model.vox
 axe.lua
 brew.lua
 carry.lua
@@ -25,6 +22,5 @@ obsidian.lua
 prepare.lua
 printer.lua
 startup
-startup2
 uninstall.lua
 Classes/Mover.lua
