@@ -23,7 +23,7 @@ installer.lua
 lavaref.lua
 obsidian.lua
 prepare.lua
-print.lua
+printer.lua
 startup
 startup2
 uninstall.lua
