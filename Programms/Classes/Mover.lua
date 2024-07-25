@@ -1,3 +1,7 @@
+---------------- using ------------------
+--local MovingScript = require("Classes.Mover")
+--local Moving = MovingScript.new(false)
+
 ---------------- class ------------------
 local Mover = {}
 Mover.__index = Mover

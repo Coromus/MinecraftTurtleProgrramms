@@ -16,7 +16,7 @@ end
 local function download(repo, url)
   -- term.clear()
   -- term.setCursorPos(0, 0)
-  print("downloading "  .. url)
+  print("downloading " .. url)
 
   local downloaded = http.get(repo .. url)
   if downloaded == nil then

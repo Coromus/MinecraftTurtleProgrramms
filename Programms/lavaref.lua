@@ -7,7 +7,6 @@ function SuckAndRefuel()
 end
 
 while turtle.getFuelLevel() < turtle.getFuelLimit() do
-
     if not turtle.forward() then
         break
     end
@@ -16,11 +15,10 @@ while turtle.getFuelLevel() < turtle.getFuelLimit() do
     turtle.refuel()
     turtle.placeDown()
     turtle.refuel()
-    
-	term.clear()
-	term.setCursorPos(1, 1)
-	print("Fuel : ",turtle.getFuelLevel())
 
+    term.clear()
+    term.setCursorPos(1, 1)
+    print("Fuel : ", turtle.getFuelLevel())
 end
 
 turtle.turnRight()
